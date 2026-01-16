@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .container , .inner{
+            width: 300px;
+            height: 300px;
+            background-color: aquamarine;
+            border: 2px solid tomato;
+            transition: transform;
+        }
+        .inner{
+            background-color: brown;
+            border: 2px solid lightsalmon;
+            transition: transform 3s ease;
+            
+            
+        }
+        .inner:hover{
+            transform: scale(0.5) rotate(45deg) translateX(500px);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Transform means change.</li>
+        <li>Tranlate means move to the x axis or y , and it's a value of a transform.</li>
+        <li>Transition means how long it will take time to change.</li>
+    </ul>
+    <div class="container">
+        <div class="inner">inner - 1</div>
+    </div>
+    <div class="container">
+        <div class="inner">inner - 2</div>
+    </div>
+    <div class="container">
+        <div class="inner">inner - 3</div>
+    </div>
+</body>
+</html>

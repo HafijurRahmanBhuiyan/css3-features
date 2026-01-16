@@ -6,7 +6,8 @@
     <title>Cricket</title>
     <style>
         .field{
-            border: 1px solid black;
+            border-bottom: 1px solid black;
+            padding-top: 30px;
 
         }
         .bat{
@@ -27,6 +28,19 @@
         }
         .field:hover .ball{
             transform: translate(1000px,-500px)
+        }
+        @media screen and (max-width: 576px) {
+            .bat{
+                width: 100px;
+                height: 93px;
+            }
+            .ball{
+                width: 20px;
+                height: 20px;
+                position: relative;
+                left: 120px;
+
+        }
         }
     </style>
 </head>

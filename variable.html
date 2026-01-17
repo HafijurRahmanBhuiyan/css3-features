@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+    <style>
+        :root{
+            --primary-color: steelblue;
+            --secondary-color: blue;
+            --font-size: 20px;
+        }
+        h2{
+            color: var(--primary-color);
+        }
+        h4{
+            background-color: var(--secondary-color);
+        }
+        .box{
+            border: 1px solid black;
+            padding: 10px;
+            width: calc(100% - 300px);
+        }
+        .box p{
+            font-size: var(--font-size);
+        }
+        .sidebar{
+            background-color: lightgray;
+        }
+        .content{
+            background-color: lightskyblue;
+        }
+        .container{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 200px calc(100% - 200px - 20px);
+            grid-template-rows: 400px;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>My custom Properties</h2>
+    <h4>Here I want to learn about Variable. My name is sohan. I am a student of Computer Science and Engineering. And in this course I am learning about Full Stack using MERN.</h4>
+    <div class="box">
+        <h3>I am doing something</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima commodi blanditiis exercitationem consectetur, aliquam officiis sequi adipisci ut aliquid, iure mollitia necessitatibus autem delectus! Quibusdam, odit fugiat! Obcaecati accusantium sit, totam dolorem soluta impedit quod veritatis animi ducimus, mollitia voluptate? Cumque laudantium veritatis recusandae itaque necessitatibus suscipit sapiente atque ea odit libero earum nostrum temporibus fuga labore dolore laborum corporis, inventore minima dicta placeat voluptate, molestias nisi repudiandae officiis. Cum modi culpa nesciunt ad laudantium sed veritatis ex obcaecati facilis dolores dolorum quod optio, animi corrupti inventore earum sit ipsa perspiciatis excepturi id. Facere saepe, velit omnis quod inventore laboriosam.</p>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            sidebar
+        </div>
+        <div class="content">
+            content
+        </div>
+
+    </div>
+</body>
+</html>
